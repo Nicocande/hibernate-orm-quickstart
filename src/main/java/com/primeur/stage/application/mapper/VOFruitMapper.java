@@ -15,7 +15,7 @@ public class VOFruitMapper {
 	
 	private VOFruit convertEntity(Fruit fruit) {
 		VOFruit vo = new VOFruit();
-		vo.setId(""+fruit.getId());
+		vo.setId(""+ fruit.getId());
 		vo.setName(fruit.getName());
 		vo.setDescription("MY DESC " + fruit.getName());
 		vo.setCurrentDate(new Date());

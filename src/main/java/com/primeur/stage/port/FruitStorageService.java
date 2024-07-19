@@ -1,25 +1,18 @@
 package com.primeur.stage.port;
 
+
 import com.primeur.stage.domain.dto.Fruit;
-import jakarta.enterprise.context.ApplicationScoped;
-import jakarta.inject.Inject;
-import jakarta.persistence.EntityManager;
+
+import java.util.List;
+
 
 public interface FruitStorageService {
 
-	Fruit create(Fruit fruit);
+	Fruit create(Fruit entity);
 
-    @ApplicationScoped
-    class FruitDAO implements FruitStorageService {
+	Fruit update(Fruit entity, Integer id);
 
-        @Inject
-        EntityManager entityManager;
+	void delete(Integer id);
 
-        @Override
-        public Fruit create(Fruit fruit) {
-            entityManager.persist(fruit);
-            return fruit;
-        }
-
-    }
+	List<Fruit> getAll();
 }
