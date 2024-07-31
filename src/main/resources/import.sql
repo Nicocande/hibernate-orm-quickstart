@@ -1,4 +1,4 @@
-INSERT INTO known_fruits(id, name) VALUES (1, 'Cherry');
-INSERT INTO known_fruits(id, name) VALUES (2, 'Apple');
-INSERT INTO known_fruits(id, name) VALUES (3, 'Banana');
-ALTER SEQUENCE known_fruits_id_seq RESTART WITH 4;
+--INSERT INTO known_books(id, title, author, description, publishingHouse, buildDate) VALUES (1, 'The final');
+--INSERT INTO known_books(id, title, author, description, publishingHouse, buildDate) VALUES (2, 'The lord of rings');
+--INSERT INTO known_books(id, title, author, description, publishingHouse, buildDate) VALUES (3, 'Moon and Sun' );
+--ALTER SEQUENCE known_books_id_seq RESTART WITH 4;
